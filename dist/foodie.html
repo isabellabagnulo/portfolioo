@@ -9,8 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Isabella Bagnulo - Foodie</title>
     <script src="https://kit.fontawesome.com/a8f17e5631.js" crossorigin="anonymous"></script>
-    <script type="module" src="js/index.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -61,7 +62,29 @@
                     </div>
                 </div>
     
-                <img src="img/foodie.webp" alt="screenshot arket">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide"><img src="img/foodie/foodie.webp" alt="screenshot foodie"></li>
+                        <li class="glide__slide"><img src="img/foodie/foodie-personas1.webp" alt="screenshot foodie"></li>
+                        <li class="glide__slide"><img src="img/foodie/foodie-personas2.webp" alt="screenshot foodie"></li>
+                        <li class="glide__slide"><img src="img/foodie/foodie-userstory.webp" alt="screenshot foodie"></li>
+                        <li class="glide__slide"><img src="img/foodie/foodie-sitemap.webp" alt="screenshot foodie"></li>
+                        <li class="glide__slide"><img src="img/foodie/foodie-color&tipography.webp" alt="screenshot foodie"></li>
+                        <li class="glide__slide"><img src="img/foodie/foodie-wireframe.webp" alt="screenshot foodie"></li>
+                        <li class="glide__slide"><img src="img/foodie/foodie-dispensa.webp" alt="screenshot foodie"></li>
+                        <li class="glide__slide"><img src="img/foodie/foodie-aggiungialimento.webp" alt="screenshot foodie"></li>
+                        <li class="glide__slide"><img src="img/foodie/foodie-prodottosingolo.webp" alt="screenshot foodie"></li>
+                      </ul>
+                      <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                        <button class="glide__bullet" data-glide-dir="=3"></button>
+                        <button class="glide__bullet" data-glide-dir="=4"></button>
+                      </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -106,6 +129,17 @@
         <p>Made by Isabella Bagnulo</p>
 
     </footer>
+
+    <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            autoplay: 2500,
+            startAt: 0,
+            perView: 1
+        }).mount().blind()
+    </script>
 
 </body>
 </html>
