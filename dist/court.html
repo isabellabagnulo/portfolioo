@@ -11,6 +11,8 @@
     <script src="https://kit.fontawesome.com/a8f17e5631.js" crossorigin="anonymous"></script>
     <script type="module" src="js/index.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -101,6 +103,17 @@
         <p>Made by Isabella Bagnulo</p>
 
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            autoplay: 2500,
+            startAt: 0,
+            perView: 1
+        }).mount().blind()
+    </script>
 
 </body>
 </html>
