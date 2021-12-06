@@ -1,21 +1,4 @@
-// import { carousel } from "./carousel.js"
+import { burgermenu } from "./burgermenu.js"
+import { swiper } from "./swiper.js"
 
-const burger = document.querySelector(".burger")
-const nav = document.querySelector("nav")
-const menu = document.querySelector(".menu")
-
-burger.addEventListener("click", (e) => {
-  e.preventDefault()
-  nav.classList.toggle("open")
-})
-
-burger.addEventListener("click", toggleMenu)
-function toggleMenu() {
-  if (menu.classList.contains("expanded")) {
-    menu.classList.remove("expanded")
-  } else {
-    menu.classList.add("expanded")
-  }
-}
-
-// carousel()
+document.addEventListener("DOMContentLoaded", burgermenu(), swiper())

@@ -11,8 +11,7 @@
     <script src="https://kit.fontawesome.com/a8f17e5631.js" crossorigin="anonymous"></script>
     <script type="module" src="js/index.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -48,17 +47,39 @@
             <div class="work-header">
 
                 <div class="work-info">
-                    <div class="single-info">
-                        <h4>YEAR</h4>
-                        <p>2021</p>
+                    <div>
+                        <div class="single-info">
+                            <h4>YEAR</h4>
+                            <p>2021</p>
+                        </div>
+                        <div class="single-info">
+                            <h4>ROLE</h4>
+                            <p>Web developer</p>
+                        </div>
                     </div>
                     <div class="single-info">
-                        <h4>ROLE</h4>
-                        <p>Web developer</p>
+                        <h4>TOOLS</h4>
+                        <p>HTML</p>
+                        <p>SASS</p>
+                        <p>Javascript</p>
                     </div>
                 </div>
     
-                <img src="img/portfolioofpaulromero.webp" alt="screenshot arket">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/portfoliopaulromero/portfoliopaulromero.webp" alt="screenshot portfolio paul romero"></div>
+                        <div class="swiper-slide"><img src="img/portfoliopaulromero/portfoliopaulromero-chisono.webp" alt="screenshot portfolio paul romero"></div>
+                        <div class="swiper-slide"><img src="img/portfoliopaulromero/portfoliopaulromero-chisono-corsidocenze.webp" alt="screenshot portfolio paul romero"></div>
+                        <div class="swiper-slide"><img src="img/portfoliopaulromero/portfoliopaulromero-servizi.webp" alt="screenshot portfolio paul romero"></div>
+                        <div class="swiper-slide"><img src="img/portfoliopaulromero/portfoliopaulromero-servizi-scopertaanalisi.webp" alt="screenshot portfolio paul romero"></div>
+                        <div class="swiper-slide"><img src="img/portfoliopaulromero/portfoliopaulromero-collaborazione.webp" alt="screenshot portfolio paul romero"></div>
+                        <div class="swiper-slide"><img src="img/portfoliopaulromero/portfoliopaulromero-contattami.webp" alt="screenshot portfolio paul romero"></div>
+                        <div class="swiper-slide"><img src="img/portfoliopaulromero/portfoliopaulromero-contattami-form.webp" alt="screenshot portfolio paul romero"></div>
+                    </div>
+
+                    <!-- <div class="swiper-pagination"></div> -->
+                  
+                </div>
 
             </div>
 
@@ -99,16 +120,7 @@
 
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
     <script type="module" src="js/index.js"></script>
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            autoplay: 2500,
-            startAt: 0,
-            perView: 1
-        }).mount().blind()
-    </script>
 
 </body>
 </html>

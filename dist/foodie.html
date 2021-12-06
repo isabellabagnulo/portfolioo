@@ -10,8 +10,7 @@
     <title>Portfolio of Isabella Bagnulo - Foodie</title>
     <script src="https://kit.fontawesome.com/a8f17e5631.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -47,44 +46,44 @@
             <div class="work-header">
 
                 <div class="work-info">
-                    <div class="single-info">
-                        <h4>YEAR</h4>
-                        <p>2021</p>
+                    <div>
+                        <div class="single-info">
+                            <h4>YEAR</h4>
+                            <p>2021</p>
+                        </div>
+                        <div class="single-info">
+                            <h4>ROLE</h4>
+                            <p>UI designer</p>
+                        </div>
+                        <div class="single-info">
+                            <h4>TEAM MEMBERS</h4>
+                            <p>Victoria Ferrari</p>
+                            <p>Niccolò Maffioli</p>
+                        </div>
                     </div>
                     <div class="single-info">
-                        <h4>ROLE</h4>
-                        <p>UI designer</p>
-                    </div>
-                    <div class="single-info">
-                        <h4>TEAM MEMBERS</h4>
-                        <p>Victoria Ferrari</p>
-                        <p>Niccolò Maffioli</p>
+                        <h4>TOOLS</h4>
+                        <p>Figma</p>
                     </div>
                 </div>
-    
-                <div class="glide">
-                    <div class="glide__track" data-glide-el="track">
-                      <ul class="glide__slides">
-                        <li class="glide__slide"><img src="img/foodie/foodie.webp" alt="screenshot foodie"></li>
-                        <li class="glide__slide"><img src="img/foodie/foodie-personas1.webp" alt="screenshot foodie"></li>
-                        <li class="glide__slide"><img src="img/foodie/foodie-personas2.webp" alt="screenshot foodie"></li>
-                        <li class="glide__slide"><img src="img/foodie/foodie-userstory.webp" alt="screenshot foodie"></li>
-                        <li class="glide__slide"><img src="img/foodie/foodie-sitemap.webp" alt="screenshot foodie"></li>
-                        <li class="glide__slide"><img src="img/foodie/foodie-color&tipography.webp" alt="screenshot foodie"></li>
-                        <li class="glide__slide"><img src="img/foodie/foodie-wireframe.webp" alt="screenshot foodie"></li>
-                        <li class="glide__slide"><img src="img/foodie/foodie-dispensa.webp" alt="screenshot foodie"></li>
-                        <li class="glide__slide"><img src="img/foodie/foodie-aggiungialimento.webp" alt="screenshot foodie"></li>
-                        <li class="glide__slide"><img src="img/foodie/foodie-prodottosingolo.webp" alt="screenshot foodie"></li>
-                      </ul>
-                      <div class="glide__bullets" data-glide-el="controls[nav]">
-                        <button class="glide__bullet" data-glide-dir="=0"></button>
-                        <button class="glide__bullet" data-glide-dir="=1"></button>
-                        <button class="glide__bullet" data-glide-dir="=2"></button>
-                        <button class="glide__bullet" data-glide-dir="=3"></button>
-                        <button class="glide__bullet" data-glide-dir="=4"></button>
-                      </div>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/foodie/foodie.webp" alt="screenshot foodie"></div>
+                        <div class="swiper-slide"><img src="img/foodie/foodie-personas1.webp" alt="screenshot foodie"></div>
+                        <div class="swiper-slide"><img src="img/foodie/foodie-personas2.webp" alt="screenshot foodie"></div>
+                        <div class="swiper-slide"><img src="img/foodie/foodie-userstory.webp" alt="screenshot foodie"></div>
+                        <div class="swiper-slide"><img src="img/foodie/foodie-sitemap.webp" alt="screenshot foodie"></div>
+                        <div class="swiper-slide"><img src="img/foodie/foodie-color&tipography.webp" alt="screenshot foodie"></div>
+                        <div class="swiper-slide"><img src="img/foodie/foodie-wireframe.webp" alt="screenshot foodie"></div>
+                        <div class="swiper-slide"><img src="img/foodie/foodie-dispensa.webp" alt="screenshot foodie"></div>
+                        <div class="swiper-slide"><img src="img/foodie/foodie-aggiungialimento.webp" alt="screenshot foodie"></div>
+                        <div class="swiper-slide"><img src="img/foodie/foodie-prodottosingolo.webp" alt="screenshot foodie"></div>
                     </div>
-                </div>
+
+                    <!-- <div class="swiper-pagination"></div> -->
+                  
+                  </div>
 
             </div>
 
@@ -130,16 +129,7 @@
 
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
     <script type="module" src="js/index.js"></script>
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            autoplay: 2500,
-            startAt: 0,
-            perView: 1
-        }).mount().blind()
-    </script>
 
 </body>
 </html>
