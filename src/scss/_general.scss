@@ -90,6 +90,10 @@ main{
     }
 }
 
+.swiper-pagination .swiper-pagination-bullet-active{
+    background: $pink;
+}
+
 // CUSTOMIZED SCROLL BAR
 /* width */
 ::-webkit-scrollbar {
